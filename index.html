@@ -11,6 +11,10 @@
   .cta:hover{background:#8C6D3E !important}
   .cta-outline:hover{background:#2B2118 !important;color:#F6EFDF !important;border-color:#2B2118 !important}
   .navlink:hover{color:#8C6D3E !important}
+  details.faq summary{cursor:pointer;list-style:none}
+  details.faq summary::-webkit-details-marker{display:none}
+  details.faq summary::after{content:'+';font-size:22px;color:#B8925A;transition:transform 0.2s;}
+  details.faq[open] summary::after{transform:rotate(45deg);}
 </style>
 </head>
 <body>
@@ -199,6 +203,50 @@
         </div>
       </a>
       <p style="font-size: 14px; color: #A38A5E; text-align: center; margin: 0;">Toque para abrir o Reels em uma nova aba.</p>
+    </div>
+  </div>
+
+  <!-- DÚVIDAS FREQUENTES -->
+  <div id="duvidas" style="width: 100%; box-sizing: border-box; padding: 8px 32px 80px; display: flex; justify-content: center;">
+    <div style="max-width: 760px; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 36px;">
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+        <div style="font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #B8925A;">Dúvidas</div>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 600; margin: 0; text-align: center; color: #2B2118;">Dúvidas Frequentes</h2>
+      </div>
+
+      <div style="width: 100%; display: flex; flex-direction: column; gap: 14px;">
+
+        <details class="faq" style="background: #FFFCF5; border: 1px solid #E3D4B0; border-radius: 14px; padding: 20px 24px;">
+          <summary style="display: flex; align-items: center; justify-content: space-between; font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600; color: #2B2118;">Como funciona a contratação?</summary>
+          <p style="font-size: 16px; line-height: 1.7; color: #6B5636; margin: 14px 0 0;">Entre em contato pelo WhatsApp e nos conte a data, horário, local e tipo de celebração. Verificamos a disponibilidade e enviamos uma proposta personalizada.</p>
+        </details>
+
+        <details class="faq" style="background: #FFFCF5; border: 1px solid #E3D4B0; border-radius: 14px; padding: 20px 24px;">
+          <summary style="display: flex; align-items: center; justify-content: space-between; font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600; color: #2B2118;">Posso escolher as músicas?</summary>
+          <p style="font-size: 16px; line-height: 1.7; color: #6B5636; margin: 14px 0 0;">Sim! O repertório é escolhido junto com vocês. Também ajudamos na escolha das músicas para cada momento, respeitando as orientações da igreja.</p>
+        </details>
+
+        <details class="faq" style="background: #FFFCF5; border: 1px solid #E3D4B0; border-radius: 14px; padding: 20px 24px;">
+          <summary style="display: flex; align-items: center; justify-content: space-between; font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600; color: #2B2118;">Vocês cantam somente em casamentos?</summary>
+          <p style="font-size: 16px; line-height: 1.7; color: #6B5636; margin: 14px 0 0;">Não! Também atuamos em missas, batizados, recepções e outras celebrações especiais.</p>
+        </details>
+
+        <details class="faq" style="background: #FFFCF5; border: 1px solid #E3D4B0; border-radius: 14px; padding: 20px 24px;">
+          <summary style="display: flex; align-items: center; justify-content: space-between; font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600; color: #2B2118;">Quais formações vocês oferecem?</summary>
+          <p style="font-size: 16px; line-height: 1.7; color: #6B5636; margin: 14px 0 0;">Trabalhamos com diferentes formações — voz, violão, violino e teclado — que podem ser adaptadas ao estilo da celebração. Confira os pacotes acima.</p>
+        </details>
+
+        <details class="faq" style="background: #FFFCF5; border: 1px solid #E3D4B0; border-radius: 14px; padding: 20px 24px;">
+          <summary style="display: flex; align-items: center; justify-content: space-between; font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600; color: #2B2118;">Vocês atendem outras cidades?</summary>
+          <p style="font-size: 16px; line-height: 1.7; color: #6B5636; margin: 14px 0 0;">Sim! Também atendemos outras cidades, mediante disponibilidade e condições de deslocamento.</p>
+        </details>
+
+        <details class="faq" style="background: #FFFCF5; border: 1px solid #E3D4B0; border-radius: 14px; padding: 20px 24px;">
+          <summary style="display: flex; align-items: center; justify-content: space-between; font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600; color: #2B2118;">Como solicito um orçamento?</summary>
+          <p style="font-size: 16px; line-height: 1.7; color: #6B5636; margin: 14px 0 0;">É simples: envie pelo WhatsApp a data, horário, local, tipo de celebração e a formação desejada. A partir disso, verificamos a disponibilidade e preparamos uma proposta personalizada.</p>
+        </details>
+
+      </div>
     </div>
   </div>
 
